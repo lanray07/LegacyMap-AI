@@ -470,6 +470,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "LegacyMap AI";
 				INFOPLIST_KEY_CFBundleIconName = AppIcon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "LegacyMap AI uses the camera to photograph headstones and historical records for OCR and preservation workflows.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LegacyMap AI uses your location to show nearby cemeteries, grave markers, and walking context while you explore.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LegacyMap AI uses the microphone when you choose voice input for names, inscriptions, cemetery notes, and historical records.";
@@ -504,6 +505,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "LegacyMap AI";
 				INFOPLIST_KEY_CFBundleIconName = AppIcon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "LegacyMap AI uses the camera to photograph headstones and historical records for OCR and preservation workflows.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LegacyMap AI uses your location to show nearby cemeteries, grave markers, and walking context while you explore.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LegacyMap AI uses the microphone when you choose voice input for names, inscriptions, cemetery notes, and historical records.";
