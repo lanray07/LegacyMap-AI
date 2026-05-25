@@ -1,0 +1,83 @@
+{
+  "identifier" : "LegacyMapAIStoreKitConfiguration",
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "LegacyMapAI",
+    "_developerTeamID" : ""
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "LegacyMapAIHeritagePlans",
+      "localizations" : [
+        {
+          "description" : "LegacyMap AI preservation plans",
+          "displayName" : "LegacyMap AI Plans",
+          "locale" : "en_GB"
+        }
+      ],
+      "name" : "LegacyMap AI Plans",
+      "subscriptions" : [
+        {
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "legacy.premium.monthly",
+          "localizations" : [
+            {
+              "description" : "Unlimited scans, AI summaries, and PDF exports.",
+              "displayName" : "Premium Monthly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "legacy.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium Monthly",
+          "subscriptionGroupID" : "LegacyMapAIHeritagePlans",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "displayPrice" : "79.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "legacy.premium.yearly",
+          "localizations" : [
+            {
+              "description" : "Annual premium cemetery and genealogy preservation tools.",
+              "displayName" : "Premium Yearly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "legacy.premium.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Premium Yearly",
+          "subscriptionGroupID" : "LegacyMapAIHeritagePlans",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "displayPrice" : "24.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "legacy.heritagepro.monthly",
+          "localizations" : [
+            {
+              "description" : "Heritage Pro placeholders for advanced archives, genealogy, cemetery management, and volunteer coordination.",
+              "displayName" : "Heritage Pro Monthly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "legacy.heritagepro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Heritage Pro Monthly",
+          "subscriptionGroupID" : "LegacyMapAIHeritagePlans",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

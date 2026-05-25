@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000201 /* LegacyMapAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000101 /* LegacyMapAIApp.swift */; };
+		000000000000000000000202 /* LegacyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000102 /* LegacyModels.swift */; };
+		000000000000000000000203 /* AppTaxonomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000103 /* AppTaxonomy.swift */; };
+		000000000000000000000204 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000104 /* AIService.swift */; };
+		000000000000000000000205 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000105 /* LocationService.swift */; };
+		000000000000000000000206 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000106 /* SubscriptionService.swift */; };
+		000000000000000000000207 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000107 /* PDFExportService.swift */; };
+		000000000000000000000208 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* NotificationService.swift */; };
+		000000000000000000000237 /* VoiceInputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000137 /* VoiceInputService.swift */; };
+		000000000000000000000209 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000109 /* DashboardViewModel.swift */; };
+		000000000000000000000210 /* HeadstoneScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000110 /* HeadstoneScannerViewModel.swift */; };
+		000000000000000000000211 /* DigitizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* DigitizerViewModel.swift */; };
+		000000000000000000000212 /* StoryGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000112 /* StoryGeneratorViewModel.swift */; };
+		000000000000000000000213 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000113 /* AppRootView.swift */; };
+		000000000000000000000214 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000114 /* OnboardingView.swift */; };
+		000000000000000000000215 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000115 /* DashboardView.swift */; };
+		000000000000000000000216 /* CemeteryExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000116 /* CemeteryExplorerView.swift */; };
+		000000000000000000000217 /* GraveFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000117 /* GraveFinderView.swift */; };
+		000000000000000000000218 /* MemorialDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000118 /* MemorialDetailView.swift */; };
+		000000000000000000000219 /* HeadstoneScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000119 /* HeadstoneScannerView.swift */; };
+		000000000000000000000220 /* FamilyConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000120 /* FamilyConnectionView.swift */; };
+		000000000000000000000221 /* VolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000121 /* VolunteerView.swift */; };
+		000000000000000000000222 /* DeathRecordDigitizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000122 /* DeathRecordDigitizerView.swift */; };
+		000000000000000000000223 /* HistoricalTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000123 /* HistoricalTimelineView.swift */; };
+		000000000000000000000224 /* AIStoryGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000124 /* AIStoryGeneratorView.swift */; };
+		000000000000000000000225 /* NearbyCemeteryDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000125 /* NearbyCemeteryDiscoveryView.swift */; };
+		000000000000000000000226 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000126 /* SettingsView.swift */; };
+		000000000000000000000227 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000127 /* PaywallView.swift */; };
+		000000000000000000000228 /* AddMemorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000128 /* AddMemorialView.swift */; };
+		000000000000000000000229 /* LegacyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000129 /* LegacyComponents.swift */; };
+		000000000000000000000230 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000130 /* CameraPicker.swift */; };
+		000000000000000000000231 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000131 /* ShareSheet.swift */; };
+		000000000000000000000232 /* OCRPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000132 /* OCRPlaceholder.swift */; };
+		000000000000000000000233 /* LegacyMapWidgetsPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000133 /* LegacyMapWidgetsPlaceholder.swift */; };
+		000000000000000000000234 /* LegacyMapWatchPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000134 /* LegacyMapWatchPlaceholder.swift */; };
+		000000000000000000000235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000135 /* Assets.xcassets */; };
+		000000000000000000000236 /* StoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000136 /* StoreKitConfiguration.storekit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000003 /* LegacyMap AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LegacyMap AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000101 /* LegacyMapAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMapAIApp.swift; sourceTree = "<group>"; };
+		000000000000000000000102 /* LegacyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyModels.swift; sourceTree = "<group>"; };
+		000000000000000000000103 /* AppTaxonomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTaxonomy.swift; sourceTree = "<group>"; };
+		000000000000000000000104 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		000000000000000000000105 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		000000000000000000000106 /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		000000000000000000000107 /* PDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportService.swift; sourceTree = "<group>"; };
+		000000000000000000000108 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		000000000000000000000137 /* VoiceInputService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputService.swift; sourceTree = "<group>"; };
+		000000000000000000000109 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000110 /* HeadstoneScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadstoneScannerViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000111 /* DigitizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitizerViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000112 /* StoryGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryGeneratorViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000113 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		000000000000000000000114 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		000000000000000000000115 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		000000000000000000000116 /* CemeteryExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CemeteryExplorerView.swift; sourceTree = "<group>"; };
+		000000000000000000000117 /* GraveFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraveFinderView.swift; sourceTree = "<group>"; };
+		000000000000000000000118 /* MemorialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorialDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000119 /* HeadstoneScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadstoneScannerView.swift; sourceTree = "<group>"; };
+		000000000000000000000120 /* FamilyConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyConnectionView.swift; sourceTree = "<group>"; };
+		000000000000000000000121 /* VolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerView.swift; sourceTree = "<group>"; };
+		000000000000000000000122 /* DeathRecordDigitizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathRecordDigitizerView.swift; sourceTree = "<group>"; };
+		000000000000000000000123 /* HistoricalTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalTimelineView.swift; sourceTree = "<group>"; };
+		000000000000000000000124 /* AIStoryGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIStoryGeneratorView.swift; sourceTree = "<group>"; };
+		000000000000000000000125 /* NearbyCemeteryDiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCemeteryDiscoveryView.swift; sourceTree = "<group>"; };
+		000000000000000000000126 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		000000000000000000000127 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		000000000000000000000128 /* AddMemorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemorialView.swift; sourceTree = "<group>"; };
+		000000000000000000000129 /* LegacyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyComponents.swift; sourceTree = "<group>"; };
+		000000000000000000000130 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		000000000000000000000131 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		000000000000000000000132 /* OCRPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRPlaceholder.swift; sourceTree = "<group>"; };
+		000000000000000000000133 /* LegacyMapWidgetsPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMapWidgetsPlaceholder.swift; sourceTree = "<group>"; };
+		000000000000000000000134 /* LegacyMapWatchPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMapWatchPlaceholder.swift; sourceTree = "<group>"; };
+		000000000000000000000135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000136 /* StoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StoreKitConfiguration.storekit; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000020 /* LegacyMapAI */,
+				000000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000003 /* LegacyMap AI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000020 /* LegacyMapAI */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000101 /* LegacyMapAIApp.swift */,
+				000000000000000000000021 /* Models */,
+				000000000000000000000022 /* Views */,
+				000000000000000000000023 /* ViewModels */,
+				000000000000000000000024 /* Services */,
+				000000000000000000000025 /* Components */,
+				000000000000000000000026 /* OCRPlaceholder */,
+				000000000000000000000027 /* WidgetsPlaceholder */,
+				000000000000000000000028 /* WatchPlaceholder */,
+				000000000000000000000029 /* Resources */,
+			);
+			path = LegacyMapAI;
+			sourceTree = "<group>";
+		};
+		000000000000000000000021 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000102 /* LegacyModels.swift */,
+				000000000000000000000103 /* AppTaxonomy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000022 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000113 /* AppRootView.swift */,
+				000000000000000000000114 /* OnboardingView.swift */,
+				000000000000000000000115 /* DashboardView.swift */,
+				000000000000000000000116 /* CemeteryExplorerView.swift */,
+				000000000000000000000117 /* GraveFinderView.swift */,
+				000000000000000000000118 /* MemorialDetailView.swift */,
+				000000000000000000000119 /* HeadstoneScannerView.swift */,
+				000000000000000000000120 /* FamilyConnectionView.swift */,
+				000000000000000000000121 /* VolunteerView.swift */,
+				000000000000000000000122 /* DeathRecordDigitizerView.swift */,
+				000000000000000000000123 /* HistoricalTimelineView.swift */,
+				000000000000000000000124 /* AIStoryGeneratorView.swift */,
+				000000000000000000000125 /* NearbyCemeteryDiscoveryView.swift */,
+				000000000000000000000126 /* SettingsView.swift */,
+				000000000000000000000127 /* PaywallView.swift */,
+				000000000000000000000128 /* AddMemorialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		000000000000000000000023 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000109 /* DashboardViewModel.swift */,
+				000000000000000000000110 /* HeadstoneScannerViewModel.swift */,
+				000000000000000000000111 /* DigitizerViewModel.swift */,
+				000000000000000000000112 /* StoryGeneratorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		000000000000000000000024 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000104 /* AIService.swift */,
+				000000000000000000000105 /* LocationService.swift */,
+				000000000000000000000106 /* SubscriptionService.swift */,
+				000000000000000000000107 /* PDFExportService.swift */,
+				000000000000000000000108 /* NotificationService.swift */,
+				000000000000000000000137 /* VoiceInputService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000025 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000129 /* LegacyComponents.swift */,
+				000000000000000000000130 /* CameraPicker.swift */,
+				000000000000000000000131 /* ShareSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		000000000000000000000026 /* OCRPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000132 /* OCRPlaceholder.swift */,
+			);
+			path = OCRPlaceholder;
+			sourceTree = "<group>";
+		};
+		000000000000000000000027 /* WidgetsPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000133 /* LegacyMapWidgetsPlaceholder.swift */,
+			);
+			path = WidgetsPlaceholder;
+			sourceTree = "<group>";
+		};
+		000000000000000000000028 /* WatchPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000134 /* LegacyMapWatchPlaceholder.swift */,
+			);
+			path = WatchPlaceholder;
+			sourceTree = "<group>";
+		};
+		000000000000000000000029 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000135 /* Assets.xcassets */,
+				000000000000000000000136 /* StoreKitConfiguration.storekit */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000002 /* LegacyMap AI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000010 /* Build configuration list for PBXNativeTarget "LegacyMap AI" */;
+			buildPhases = (
+				000000000000000000000006 /* Sources */,
+				000000000000000000000007 /* Frameworks */,
+				000000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LegacyMap AI";
+			productName = "LegacyMap AI";
+			productReference = 000000000000000000000003 /* LegacyMap AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXProject "LegacyMap AI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000004;
+			productRefGroup = 000000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000002 /* LegacyMap AI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000235 /* Assets.xcassets in Resources */,
+				000000000000000000000236 /* StoreKitConfiguration.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000201 /* LegacyMapAIApp.swift in Sources */,
+				000000000000000000000202 /* LegacyModels.swift in Sources */,
+				000000000000000000000203 /* AppTaxonomy.swift in Sources */,
+				000000000000000000000204 /* AIService.swift in Sources */,
+				000000000000000000000205 /* LocationService.swift in Sources */,
+				000000000000000000000206 /* SubscriptionService.swift in Sources */,
+				000000000000000000000207 /* PDFExportService.swift in Sources */,
+				000000000000000000000208 /* NotificationService.swift in Sources */,
+				000000000000000000000237 /* VoiceInputService.swift in Sources */,
+				000000000000000000000209 /* DashboardViewModel.swift in Sources */,
+				000000000000000000000210 /* HeadstoneScannerViewModel.swift in Sources */,
+				000000000000000000000211 /* DigitizerViewModel.swift in Sources */,
+				000000000000000000000212 /* StoryGeneratorViewModel.swift in Sources */,
+				000000000000000000000213 /* AppRootView.swift in Sources */,
+				000000000000000000000214 /* OnboardingView.swift in Sources */,
+				000000000000000000000215 /* DashboardView.swift in Sources */,
+				000000000000000000000216 /* CemeteryExplorerView.swift in Sources */,
+				000000000000000000000217 /* GraveFinderView.swift in Sources */,
+				000000000000000000000218 /* MemorialDetailView.swift in Sources */,
+				000000000000000000000219 /* HeadstoneScannerView.swift in Sources */,
+				000000000000000000000220 /* FamilyConnectionView.swift in Sources */,
+				000000000000000000000221 /* VolunteerView.swift in Sources */,
+				000000000000000000000222 /* DeathRecordDigitizerView.swift in Sources */,
+				000000000000000000000223 /* HistoricalTimelineView.swift in Sources */,
+				000000000000000000000224 /* AIStoryGeneratorView.swift in Sources */,
+				000000000000000000000225 /* NearbyCemeteryDiscoveryView.swift in Sources */,
+				000000000000000000000226 /* SettingsView.swift in Sources */,
+				000000000000000000000227 /* PaywallView.swift in Sources */,
+				000000000000000000000228 /* AddMemorialView.swift in Sources */,
+				000000000000000000000229 /* LegacyComponents.swift in Sources */,
+				000000000000000000000230 /* CameraPicker.swift in Sources */,
+				000000000000000000000231 /* ShareSheet.swift in Sources */,
+				000000000000000000000232 /* OCRPlaceholder.swift in Sources */,
+				000000000000000000000233 /* LegacyMapWidgetsPlaceholder.swift in Sources */,
+				000000000000000000000234 /* LegacyMapWatchPlaceholder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LegacyMap AI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "LegacyMap AI uses the camera to photograph headstones and historical records for OCR and preservation workflows.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LegacyMap AI uses your location to show nearby cemeteries, grave markers, and walking context while you explore.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LegacyMap AI uses the microphone when you choose voice input for names, inscriptions, cemetery notes, and historical records.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "LegacyMap AI can save generated memorial reports and preservation images when you choose to export them.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "LegacyMap AI uses selected photos to scan headstones, upload memorial images, and digitize historical records.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "LegacyMap AI uses speech recognition when you choose to dictate names, inscriptions, notes, and historical record text.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.legacymap.ai;
+				PRODUCT_MODULE_NAME = LegacyMapAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LegacyMap AI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "LegacyMap AI uses the camera to photograph headstones and historical records for OCR and preservation workflows.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LegacyMap AI uses your location to show nearby cemeteries, grave markers, and walking context while you explore.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LegacyMap AI uses the microphone when you choose voice input for names, inscriptions, cemetery notes, and historical records.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "LegacyMap AI can save generated memorial reports and preservation images when you choose to export them.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "LegacyMap AI uses selected photos to scan headstones, upload memorial images, and digitize historical records.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "LegacyMap AI uses speech recognition when you choose to dictate names, inscriptions, notes, and historical record text.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.legacymap.ai;
+				PRODUCT_MODULE_NAME = LegacyMapAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000009 /* Build configuration list for PBXProject "LegacyMap AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000011 /* Debug */,
+				000000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000010 /* Build configuration list for PBXNativeTarget "LegacyMap AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000013 /* Debug */,
+				000000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

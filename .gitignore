@@ -1,0 +1,37 @@
+# Xcode
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Archives and signing material
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.mobileprovision
+*.p12
+*.cer
+*.pem
+*.p8
+
+# macOS
+.DS_Store
+
+# Python tooling
+__pycache__/
+*.py[cod]
+
+# App Store Connect local export helpers
+AppStoreScreenshots/*contact_sheet.png
+AppStoreScreenshots/codex_window.png
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/

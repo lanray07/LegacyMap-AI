@@ -1,0 +1,43 @@
+iPhone screenshots:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\01_preserve_the_past.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\02_gps_cemetery_maps.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\03_ai_headstone_scanner.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\04_memorial_pages.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\05_death_record_digitizer.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\06_family_connection_engine.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\07_volunteer_restoration.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\08_ai_story_generator.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\09_pdf_memorial_export.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\10_premium_tools.png"
+
+iPad screenshots:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\01_preserve_the_past_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\02_gps_cemetery_maps_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\03_ai_headstone_scanner_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\04_memorial_pages_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\05_death_record_digitizer_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\06_family_connection_engine_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\07_volunteer_restoration_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\08_ai_story_generator_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\09_pdf_memorial_export_ipad.png"
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\iPad\10_premium_tools_ipad.png"
+
+Subscription review screenshots:
+Premium Monthly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\Subscriptions\premium_monthly_review.png"
+
+Premium Yearly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\Subscriptions\premium_yearly_review.png"
+
+Heritage Pro Monthly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\Subscriptions\heritage_pro_monthly_review.png"
+
+Subscription optional 1024 x 1024 images:
+Premium Monthly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\SubscriptionImages\premium_monthly_1024.png"
+
+Premium Yearly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\SubscriptionImages\premium_yearly_1024.png"
+
+Heritage Pro Monthly:
+"C:\Users\User\Documents\LegacyMap AI\AppStoreScreenshots\SubscriptionImages\heritage_pro_monthly_1024.png"
