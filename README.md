@@ -53,7 +53,6 @@ For TestFlight upload, configure these GitHub repository secrets:
 - `APPLE_TEAM_ID`
 - `BUILD_CERTIFICATE_BASE64`
 - `P12_PASSWORD`
-- `BUILD_PROVISION_PROFILE_BASE64`
 - `ASC_API_KEY_ID`
 - `ASC_API_ISSUER_ID`
 - `ASC_API_PRIVATE_KEY_BASE64`
