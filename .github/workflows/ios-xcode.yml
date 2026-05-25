@@ -17,8 +17,6 @@ on:
 env:
   PROJECT_PATH: LegacyMap AI.xcodeproj
   SCHEME: LegacyMap AI
-  ARCHIVE_PATH: ${{ runner.temp }}/LegacyMapAI.xcarchive
-  EXPORT_PATH: ${{ runner.temp }}/LegacyMapAIExport
 
 jobs:
   build-simulator:
@@ -46,6 +44,9 @@ jobs:
     name: Archive and Upload to TestFlight
     runs-on: macos-latest
     if: github.event_name == 'workflow_dispatch' && inputs.upload_testflight == true
+    env:
+      ARCHIVE_PATH: ${{ runner.temp }}/LegacyMapAI.xcarchive
+      EXPORT_PATH: ${{ runner.temp }}/LegacyMapAIExport
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
