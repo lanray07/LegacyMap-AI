@@ -15,6 +15,16 @@ Important limitations:
 - Not legal identity verification.
 - Not official archival certification.
 
+## App Store Support
+
+Support: https://github.com/lanray07/legacymap-ai/issues
+
+Marketing: https://github.com/lanray07/legacymap-ai
+
+Privacy Policy: https://github.com/lanray07/LegacyMap-AI/blob/main/PRIVACY.md
+
+Terms Of Use: https://github.com/lanray07/LegacyMap-AI/blob/main/TERMS.md
+
 ## Run
 
 Open `LegacyMap AI.xcodeproj` in Xcode, select the shared `LegacyMap AI` scheme, and run on an iOS 17+ simulator or device. Mock AI is enabled by default through `MockAIService`.

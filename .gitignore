@@ -31,6 +31,9 @@ __pycache__/
 # App Store Connect local export helpers
 AppStoreScreenshots/*contact_sheet.png
 AppStoreScreenshots/codex_window.png
+AppStoreScreenshots/codex_window_*.png
+AppStoreScreenshots/firefox_window_*.png
+AppStoreScreenshots/FlatRGB/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/
