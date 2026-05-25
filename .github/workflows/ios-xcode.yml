@@ -21,7 +21,7 @@ env:
 jobs:
   build-simulator:
     name: Build for iOS Simulator
-    runs-on: macos-latest
+    runs-on: macos-26
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -42,7 +42,7 @@ jobs:
 
   upload-testflight:
     name: Archive and Upload to TestFlight
-    runs-on: macos-latest
+    runs-on: macos-26
     if: github.event_name == 'workflow_dispatch' && inputs.upload_testflight == true
     env:
       ARCHIVE_PATH: /tmp/LegacyMapAI.xcarchive
