@@ -38,7 +38,7 @@ struct CemeteryExplorerView: View {
                             NavigationLink(destination: MemorialDetailView(memorial: memorial)) {
                                 Image(systemName: "mappin.circle.fill")
                                     .font(.title2)
-                                    .foregroundStyle(.legacyGold)
+                                    .foregroundStyle(Color.legacyGold)
                                     .shadow(radius: 2)
                             }
                         }
@@ -49,7 +49,7 @@ struct CemeteryExplorerView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 .overlay {
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .stroke(.legacyParchment.opacity(0.25), lineWidth: 1)
+                        .stroke(Color.legacyParchment.opacity(0.25), lineWidth: 1)
                 }
 
                 VStack(alignment: .leading, spacing: 12) {

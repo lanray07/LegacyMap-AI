@@ -111,7 +111,7 @@ struct FamilyConnectionView: View {
 
             Text("\(connections.count) saved relationship placeholders.")
                 .font(.caption)
-                .foregroundStyle(.legacyParchment.opacity(0.76))
+                .foregroundStyle(Color.legacyParchment.opacity(0.76))
         }
         .legacyCard()
     }

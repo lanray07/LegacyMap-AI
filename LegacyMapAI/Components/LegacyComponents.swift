@@ -16,13 +16,13 @@ extension Color {
 struct LegacyBackground: View {
     var body: some View {
         LinearGradient(
-            colors: [.legacyCharcoal, Color(red: 0.13, green: 0.12, blue: 0.11), Color(red: 0.20, green: 0.19, blue: 0.17)],
+            colors: [Color.legacyCharcoal, Color(red: 0.13, green: 0.12, blue: 0.11), Color(red: 0.20, green: 0.19, blue: 0.17)],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )
         .overlay {
             Rectangle()
-                .fill(.legacyPaper.opacity(0.06))
+                .fill(Color.legacyPaper.opacity(0.06))
                 .overlay(alignment: .topLeading) {
                     Canvas { context, size in
                         for index in stride(from: 0, through: Int(size.height), by: 11) {
@@ -32,7 +32,7 @@ struct LegacyBackground: View {
                                     path.move(to: CGPoint(x: 0, y: CGFloat(index)))
                                     path.addLine(to: CGPoint(x: size.width, y: CGFloat(index + 4)))
                                 },
-                                with: .color(.legacyPaper.opacity(opacity)),
+                                with: .color(Color.legacyPaper.opacity(opacity)),
                                 lineWidth: 0.6
                             )
                         }
@@ -50,7 +50,7 @@ struct LegacyCardModifier: ViewModifier {
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
             .overlay {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    .stroke(.legacyParchment.opacity(0.22), lineWidth: 1)
+                    .stroke(Color.legacyParchment.opacity(0.22), lineWidth: 1)
             }
     }
 }
@@ -69,15 +69,15 @@ struct SectionHeader: View {
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 10) {
             Image(systemName: systemImage)
-                .foregroundStyle(.legacyGold)
+                .foregroundStyle(Color.legacyGold)
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(.headline.weight(.semibold))
-                    .foregroundStyle(.legacyPaper)
+                    .foregroundStyle(Color.legacyPaper)
                 if let subtitle {
                     Text(subtitle)
                         .font(.caption)
-                        .foregroundStyle(.legacyParchment.opacity(0.78))
+                        .foregroundStyle(Color.legacyParchment.opacity(0.78))
                 }
             }
             Spacer()
@@ -95,14 +95,14 @@ struct EmptyStateView: View {
         VStack(spacing: 10) {
             Image(systemName: systemImage)
                 .font(.system(size: 28, weight: .semibold))
-                .foregroundStyle(.legacyGold)
+                .foregroundStyle(Color.legacyGold)
             Text(title)
                 .font(.headline)
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             Text(message)
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
-                .foregroundStyle(.legacyParchment.opacity(0.82))
+                .foregroundStyle(Color.legacyParchment.opacity(0.82))
         }
         .frame(maxWidth: .infinity)
         .legacyCard()
@@ -120,16 +120,16 @@ struct QuickActionTile<Destination: View>: View {
             VStack(alignment: .leading, spacing: 12) {
                 Image(systemName: systemImage)
                     .font(.title3.weight(.semibold))
-                    .foregroundStyle(.legacyGold)
+                    .foregroundStyle(Color.legacyGold)
                     .frame(width: 34, height: 34)
-                    .background(.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
+                    .background(Color.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text(subtitle)
                         .font(.caption)
-                        .foregroundStyle(.legacyParchment.opacity(0.78))
+                        .foregroundStyle(Color.legacyParchment.opacity(0.78))
                         .lineLimit(2)
                 }
             }
@@ -150,20 +150,20 @@ struct MemorialCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(memorial.fullName)
                         .font(.headline.weight(.semibold))
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text(memorial.yearRange)
                         .font(.caption)
-                        .foregroundStyle(.legacyParchment)
+                        .foregroundStyle(Color.legacyParchment)
                 }
                 Spacer()
                 Image(systemName: memorial.isSaved ? "bookmark.fill" : "bookmark")
-                    .foregroundStyle(.legacyGold)
+                    .foregroundStyle(Color.legacyGold)
             }
 
             if !memorial.inscription.isEmpty {
                 Text(memorial.inscription)
                     .font(.subheadline)
-                    .foregroundStyle(.legacyPaper.opacity(0.82))
+                    .foregroundStyle(Color.legacyPaper.opacity(0.82))
                     .lineLimit(3)
             }
 
@@ -175,7 +175,7 @@ struct MemorialCard: View {
                 Text("\(memorial.gpsLatitude, specifier: "%.3f"), \(memorial.gpsLongitude, specifier: "%.3f")")
             }
             .font(.caption)
-            .foregroundStyle(.legacyParchment.opacity(0.75))
+            .foregroundStyle(Color.legacyParchment.opacity(0.75))
         }
         .legacyCard()
     }
@@ -199,10 +199,10 @@ struct CemeteryMapCard: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(cemetery.cemeteryName)
                     .font(.headline.weight(.semibold))
-                    .foregroundStyle(.legacyPaper)
+                    .foregroundStyle(Color.legacyPaper)
                 Text(cemetery.historicalNotes.isEmpty ? "Historical notes can be added as cemetery records are digitized." : cemetery.historicalNotes)
                     .font(.caption)
-                    .foregroundStyle(.legacyParchment.opacity(0.78))
+                    .foregroundStyle(Color.legacyParchment.opacity(0.78))
                     .lineLimit(3)
             }
         }
@@ -218,31 +218,31 @@ struct FamilyTreeCardPlaceholder: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image(systemName: "tree")
-                    .foregroundStyle(.legacyGold)
+                    .foregroundStyle(Color.legacyGold)
                 Text(title)
                     .font(.headline)
-                    .foregroundStyle(.legacyPaper)
+                    .foregroundStyle(Color.legacyPaper)
             }
             HStack(spacing: 8) {
                 ForEach(0..<4) { index in
                     VStack(spacing: 6) {
                         Circle()
-                            .fill(index == 0 ? .legacyGold : .legacyStone.opacity(0.6))
+                            .fill(index == 0 ? Color.legacyGold : Color.legacyStone.opacity(0.6))
                             .frame(width: 26, height: 26)
                         Rectangle()
-                            .fill(.legacyParchment.opacity(0.35))
+                            .fill(Color.legacyParchment.opacity(0.35))
                             .frame(width: 1, height: 22)
                     }
                     if index < 3 {
                         Rectangle()
-                            .fill(.legacyParchment.opacity(0.35))
+                            .fill(Color.legacyParchment.opacity(0.35))
                             .frame(height: 1)
                     }
                 }
             }
             Text(bodyText)
                 .font(.subheadline)
-                .foregroundStyle(.legacyParchment.opacity(0.82))
+                .foregroundStyle(Color.legacyParchment.opacity(0.82))
         }
         .legacyCard()
     }
@@ -256,13 +256,13 @@ struct OCRResultCard: View {
             SectionHeader(title: "AI OCR restoration placeholder", subtitle: result.confidenceNote, systemImage: "text.viewfinder")
             Label(result.possibleInscription, systemImage: "quote.opening")
                 .font(.subheadline)
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             Label(result.likelySurname, systemImage: "person.text.rectangle")
                 .font(.subheadline)
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             Label(result.conditionEstimate, systemImage: "stone")
                 .font(.subheadline)
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
 
             VStack(alignment: .leading, spacing: 6) {
                 ForEach(result.estimatedDates, id: \.self) { date in
@@ -273,7 +273,7 @@ struct OCRResultCard: View {
                 }
             }
             .font(.caption)
-            .foregroundStyle(.legacyParchment.opacity(0.86))
+            .foregroundStyle(Color.legacyParchment.opacity(0.86))
         }
         .legacyCard()
     }
@@ -286,23 +286,23 @@ struct VolunteerTaskCard: View {
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             Image(systemName: "hand.raised")
-                .foregroundStyle(.legacyGold)
+                .foregroundStyle(Color.legacyGold)
                 .frame(width: 34, height: 34)
-                .background(.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
+                .background(Color.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
                     Text(task.taskType)
                         .font(.headline)
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Spacer()
                     StatusPill(text: task.status)
                 }
                 Text(cemetery?.cemeteryName ?? "Unknown cemetery")
                     .font(.caption)
-                    .foregroundStyle(.legacyParchment)
+                    .foregroundStyle(Color.legacyParchment)
                 Text(task.notes.isEmpty ? "No maintenance notes yet." : task.notes)
                     .font(.subheadline)
-                    .foregroundStyle(.legacyPaper.opacity(0.78))
+                    .foregroundStyle(Color.legacyPaper.opacity(0.78))
                     .lineLimit(3)
             }
         }
@@ -319,22 +319,22 @@ struct HistoricalTimelineCard: View {
         HStack(alignment: .top, spacing: 14) {
             VStack(spacing: 0) {
                 Circle()
-                    .fill(.legacyGold)
+                    .fill(Color.legacyGold)
                     .frame(width: 12, height: 12)
                 Rectangle()
-                    .fill(.legacyParchment.opacity(0.35))
+                    .fill(Color.legacyParchment.opacity(0.35))
                     .frame(width: 1, height: 58)
             }
             VStack(alignment: .leading, spacing: 4) {
                 Text(year)
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(.legacyGold)
+                    .foregroundStyle(Color.legacyGold)
                 Text(title)
                     .font(.headline)
-                    .foregroundStyle(.legacyPaper)
+                    .foregroundStyle(Color.legacyPaper)
                 Text(detail)
                     .font(.subheadline)
-                    .foregroundStyle(.legacyParchment.opacity(0.82))
+                    .foregroundStyle(Color.legacyParchment.opacity(0.82))
             }
             Spacer()
         }
@@ -349,16 +349,16 @@ struct InsightCard: View {
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             Image(systemName: systemImage)
-                .foregroundStyle(.legacyGold)
+                .foregroundStyle(Color.legacyGold)
                 .frame(width: 34, height: 34)
-                .background(.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
+                .background(Color.legacyGold.opacity(0.13), in: RoundedRectangle(cornerRadius: 8))
             VStack(alignment: .leading, spacing: 6) {
                 Text(title)
                     .font(.headline)
-                    .foregroundStyle(.legacyPaper)
+                    .foregroundStyle(Color.legacyPaper)
                 Text(detail)
                     .font(.subheadline)
-                    .foregroundStyle(.legacyParchment.opacity(0.84))
+                    .foregroundStyle(Color.legacyParchment.opacity(0.84))
             }
         }
         .legacyCard()
@@ -373,15 +373,15 @@ struct ReportPreviewView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .font(.headline)
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             ForEach(Array(sections.enumerated()), id: \.offset) { _, section in
                 VStack(alignment: .leading, spacing: 4) {
                     Text(section.0)
                         .font(.caption.weight(.semibold))
-                        .foregroundStyle(.legacyGold)
+                        .foregroundStyle(Color.legacyGold)
                     Text(section.1)
                         .font(.subheadline)
-                        .foregroundStyle(.legacyParchment.opacity(0.82))
+                        .foregroundStyle(Color.legacyParchment.opacity(0.82))
                 }
             }
         }
@@ -397,23 +397,23 @@ struct UpgradeBanner: View {
         NavigationLink(destination: PaywallView()) {
             HStack(spacing: 12) {
                 Image(systemName: "sparkles.rectangle.stack")
-                    .foregroundStyle(.legacyCharcoal)
+                    .foregroundStyle(Color.legacyCharcoal)
                     .frame(width: 34, height: 34)
-                    .background(.legacyPaper, in: RoundedRectangle(cornerRadius: 8))
+                    .background(Color.legacyPaper, in: RoundedRectangle(cornerRadius: 8))
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .font(.headline)
-                        .foregroundStyle(.legacyCharcoal)
+                        .foregroundStyle(Color.legacyCharcoal)
                     Text(message)
                         .font(.caption)
-                        .foregroundStyle(.legacyInk.opacity(0.78))
+                        .foregroundStyle(Color.legacyInk.opacity(0.78))
                 }
                 Spacer()
                 Image(systemName: "chevron.right")
-                    .foregroundStyle(.legacyCharcoal)
+                    .foregroundStyle(Color.legacyCharcoal)
             }
             .padding(14)
-            .background(.legacyGold, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .background(Color.legacyGold, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
         }
         .buttonStyle(.plain)
     }
@@ -425,10 +425,10 @@ struct StatusPill: View {
     var body: some View {
         Text(text)
             .font(.caption2.weight(.semibold))
-            .foregroundStyle(.legacyPaper)
+            .foregroundStyle(Color.legacyPaper)
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
-            .background(.legacySignal.opacity(0.55), in: Capsule())
+            .background(Color.legacySignal.opacity(0.55), in: Capsule())
     }
 }
 
@@ -438,8 +438,8 @@ struct LegacyPrimaryButtonStyle: ButtonStyle {
             .font(.subheadline.weight(.semibold))
             .frame(maxWidth: .infinity)
             .padding(.vertical, 12)
-            .foregroundStyle(.legacyCharcoal)
-            .background(configuration.isPressed ? .legacyParchment : .legacyGold, in: RoundedRectangle(cornerRadius: 8))
+            .foregroundStyle(Color.legacyCharcoal)
+            .background(configuration.isPressed ? Color.legacyParchment : Color.legacyGold, in: RoundedRectangle(cornerRadius: 8))
     }
 }
 
@@ -460,13 +460,13 @@ struct VoiceDictationButton: View {
             )
         }
         .font(.caption.weight(.semibold))
-        .foregroundStyle(voiceService.isRecording ? .legacyCharcoal : .legacyPaper)
+        .foregroundStyle(voiceService.isRecording ? Color.legacyCharcoal : Color.legacyPaper)
         .padding(.horizontal, 10)
         .padding(.vertical, 8)
-        .background(voiceService.isRecording ? .legacyGold : .legacyStone.opacity(0.28), in: RoundedRectangle(cornerRadius: 8))
+        .background(voiceService.isRecording ? Color.legacyGold : Color.legacyStone.opacity(0.28), in: RoundedRectangle(cornerRadius: 8))
         .overlay {
             RoundedRectangle(cornerRadius: 8)
-                .stroke(.legacyParchment.opacity(0.18), lineWidth: 1)
+                .stroke(Color.legacyParchment.opacity(0.18), lineWidth: 1)
         }
         .accessibilityLabel(voiceService.isRecording ? "Stop voice input" : label)
         .alert("Voice input", isPresented: Binding(
@@ -523,7 +523,7 @@ struct LoadingStateView: View {
             Text(message)
                 .font(.subheadline)
         }
-        .foregroundStyle(.legacyParchment)
+        .foregroundStyle(Color.legacyParchment)
         .frame(maxWidth: .infinity)
         .legacyCard()
     }

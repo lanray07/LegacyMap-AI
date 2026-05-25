@@ -103,9 +103,9 @@ struct HeadstoneScannerView: View {
                 .overlay(alignment: .bottomLeading) {
                     Text("Crop faded inscription before final OCR in production.")
                         .font(.caption.weight(.semibold))
-                        .foregroundStyle(.legacyCharcoal)
+                        .foregroundStyle(Color.legacyCharcoal)
                         .padding(8)
-                        .background(.legacyPaper.opacity(0.92), in: RoundedRectangle(cornerRadius: 8))
+                        .background(Color.legacyPaper.opacity(0.92), in: RoundedRectangle(cornerRadius: 8))
                         .padding(10)
                 }
         } else {

@@ -15,13 +15,13 @@ struct OnboardingView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("LegacyMap AI")
                         .font(.largeTitle.weight(.semibold))
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text("Preserve the past. Reconnect forgotten stories.")
                         .font(.title3)
-                        .foregroundStyle(.legacyParchment)
+                        .foregroundStyle(Color.legacyParchment)
                     Text("Every grave has a story waiting to be remembered.")
                         .font(.subheadline)
-                        .foregroundStyle(.legacyPaper.opacity(0.82))
+                        .foregroundStyle(Color.legacyPaper.opacity(0.82))
                 }
 
                 VStack(alignment: .leading, spacing: 14) {
@@ -37,9 +37,9 @@ struct OnboardingView: View {
                                         .font(.subheadline.weight(.medium))
                                     Spacer()
                                 }
-                                .foregroundStyle(selectedInterest == interest ? .legacyCharcoal : .legacyPaper)
+                                .foregroundStyle(selectedInterest == interest ? Color.legacyCharcoal : Color.legacyPaper)
                                 .padding(12)
-                                .background(selectedInterest == interest ? .legacyGold : .legacyStone.opacity(0.22), in: RoundedRectangle(cornerRadius: 8))
+                                .background(selectedInterest == interest ? Color.legacyGold : Color.legacyStone.opacity(0.22), in: RoundedRectangle(cornerRadius: 8))
                             }
                             .buttonStyle(.plain)
                         }
@@ -79,7 +79,7 @@ struct OnboardingView: View {
                     ForEach(LegacyDisclaimer.bullets, id: \.self) { item in
                         Label(item, systemImage: "info.circle")
                             .font(.caption)
-                            .foregroundStyle(.legacyParchment.opacity(0.86))
+                            .foregroundStyle(Color.legacyParchment.opacity(0.86))
                     }
                 }
                 .legacyCard()

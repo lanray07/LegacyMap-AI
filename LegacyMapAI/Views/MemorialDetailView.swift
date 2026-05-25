@@ -90,16 +90,16 @@ struct MemorialDetailView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(memorial.fullName)
                 .font(.title2.weight(.semibold))
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             Text(memorial.yearRange)
                 .font(.headline)
-                .foregroundStyle(.legacyParchment)
+                .foregroundStyle(Color.legacyParchment)
             Label(cemetery?.cemeteryName ?? "Unknown cemetery", systemImage: "building.columns")
                 .font(.subheadline)
-                .foregroundStyle(.legacyParchment.opacity(0.82))
+                .foregroundStyle(Color.legacyParchment.opacity(0.82))
             Label("\(memorial.gpsLatitude, specifier: "%.5f"), \(memorial.gpsLongitude, specifier: "%.5f")", systemImage: "location")
                 .font(.caption)
-                .foregroundStyle(.legacyParchment.opacity(0.72))
+                .foregroundStyle(Color.legacyParchment.opacity(0.72))
         }
         .legacyCard()
     }

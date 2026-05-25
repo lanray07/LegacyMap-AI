@@ -30,10 +30,10 @@ struct VolunteerView: View {
                         ForEach(VolunteerTaskType.allCases) { type in
                             Label(type.rawValue, systemImage: type.icon)
                                 .font(.caption.weight(.semibold))
-                                .foregroundStyle(.legacyPaper)
+                                .foregroundStyle(Color.legacyPaper)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(12)
-                                .background(.legacyStone.opacity(0.20), in: RoundedRectangle(cornerRadius: 8))
+                                .background(Color.legacyStone.opacity(0.20), in: RoundedRectangle(cornerRadius: 8))
                         }
                     }
                 }

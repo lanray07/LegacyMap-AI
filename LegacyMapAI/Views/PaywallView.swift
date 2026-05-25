@@ -10,10 +10,10 @@ struct PaywallView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("LegacyMap AI Premium")
                         .font(.title2.weight(.semibold))
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text("Preservation tools for deeper cemetery research, OCR restoration, family collections, and exports.")
                         .font(.subheadline)
-                        .foregroundStyle(.legacyParchment.opacity(0.84))
+                        .foregroundStyle(Color.legacyParchment.opacity(0.84))
                 }
 
                 ForEach([SubscriptionPlan.free, .premiumMonthly, .premiumYearly, .heritageProMonthly]) { plan in
@@ -50,10 +50,10 @@ struct PaywallView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(plan.displayName)
                         .font(.headline)
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text(priceText(for: plan))
                         .font(.title3.weight(.semibold))
-                        .foregroundStyle(.legacyGold)
+                        .foregroundStyle(Color.legacyGold)
                 }
                 Spacer()
                 if subscriptionService.activePlan == plan {
@@ -63,12 +63,12 @@ struct PaywallView: View {
 
             Text(plan.summary)
                 .font(.subheadline)
-                .foregroundStyle(.legacyParchment.opacity(0.84))
+                .foregroundStyle(Color.legacyParchment.opacity(0.84))
 
             ForEach(plan.features, id: \.self) { feature in
                 Label(feature, systemImage: "checkmark")
                     .font(.caption)
-                    .foregroundStyle(.legacyPaper.opacity(0.86))
+                    .foregroundStyle(Color.legacyPaper.opacity(0.86))
             }
 
             if plan != .free {

@@ -44,7 +44,7 @@ struct HistoricalTimelineView: View {
                                 x: .value("Decade", item.decade),
                                 y: .value("Memorials", item.count)
                             )
-                            .foregroundStyle(.legacyGold)
+                            .foregroundStyle(Color.legacyGold)
                         }
                         .frame(height: 220)
                     }

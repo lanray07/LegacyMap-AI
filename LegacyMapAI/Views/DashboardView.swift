@@ -45,10 +45,10 @@ struct DashboardView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Every grave has a story waiting to be remembered.")
                 .font(.title2.weight(.semibold))
-                .foregroundStyle(.legacyPaper)
+                .foregroundStyle(Color.legacyPaper)
             Text("Map cemeteries, preserve inscriptions, organize family records, and keep historical context close to the source.")
                 .font(.subheadline)
-                .foregroundStyle(.legacyParchment.opacity(0.82))
+                .foregroundStyle(Color.legacyParchment.opacity(0.82))
         }
     }
 
@@ -64,13 +64,13 @@ struct DashboardView: View {
             ForEach(values) { metric in
                 VStack(alignment: .leading, spacing: 8) {
                     Image(systemName: metric.systemImage)
-                        .foregroundStyle(.legacyGold)
+                        .foregroundStyle(Color.legacyGold)
                     Text(metric.value)
                         .font(.title2.weight(.semibold))
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                     Text(metric.title)
                         .font(.caption)
-                        .foregroundStyle(.legacyParchment)
+                        .foregroundStyle(Color.legacyParchment)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .legacyCard()

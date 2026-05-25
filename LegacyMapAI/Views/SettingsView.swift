@@ -48,7 +48,7 @@ struct SettingsView: View {
 
                     Toggle("Prefer local/mock OCR by default", isOn: $preferLocalOCR)
                         .toggleStyle(.switch)
-                        .foregroundStyle(.legacyPaper)
+                        .foregroundStyle(Color.legacyPaper)
                 }
                 .legacyCard()
 
@@ -57,7 +57,7 @@ struct SettingsView: View {
                     ForEach(LegacyDisclaimer.bullets, id: \.self) { item in
                         Label(item, systemImage: "checkmark.circle")
                             .font(.caption)
-                            .foregroundStyle(.legacyParchment.opacity(0.86))
+                            .foregroundStyle(Color.legacyParchment.opacity(0.86))
                     }
                 }
                 .legacyCard()

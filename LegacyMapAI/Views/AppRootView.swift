@@ -79,6 +79,6 @@ struct MainTabView: View {
                 .tag(tab)
             }
         }
-        .tint(.legacyGold)
+        .tint(Color.legacyGold)
     }
 }
