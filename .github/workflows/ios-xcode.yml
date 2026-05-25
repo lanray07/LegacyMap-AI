@@ -45,8 +45,8 @@ jobs:
     runs-on: macos-latest
     if: github.event_name == 'workflow_dispatch' && inputs.upload_testflight == true
     env:
-      ARCHIVE_PATH: ${{ runner.temp }}/LegacyMapAI.xcarchive
-      EXPORT_PATH: ${{ runner.temp }}/LegacyMapAIExport
+      ARCHIVE_PATH: /tmp/LegacyMapAI.xcarchive
+      EXPORT_PATH: /tmp/LegacyMapAIExport
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
