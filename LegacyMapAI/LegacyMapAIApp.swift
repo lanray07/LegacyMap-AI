@@ -30,7 +30,6 @@ struct LegacyMapAIApp: App {
                 .task {
                     await subscriptionService.loadProducts()
                     subscriptionService.listenForTransactions()
-                    await notificationService.requestAuthorization()
                 }
         }
     }

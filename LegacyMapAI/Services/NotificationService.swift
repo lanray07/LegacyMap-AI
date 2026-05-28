@@ -15,6 +15,11 @@ final class NotificationService: ObservableObject {
     }
 
     func scheduleRestorationReminder(title: String, notes: String) async {
+        if !authorizationGranted {
+            await requestAuthorization()
+        }
+        guard authorizationGranted else { return }
+
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = notes

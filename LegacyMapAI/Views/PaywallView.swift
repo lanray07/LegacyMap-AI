@@ -20,6 +20,8 @@ struct PaywallView: View {
                     planCard(plan)
                 }
 
+                subscriptionDisclosures
+
                 if subscriptionService.isLoading {
                     LoadingStateView(message: "Loading subscription products...")
                 }
@@ -54,6 +56,9 @@ struct PaywallView: View {
                     Text(priceText(for: plan))
                         .font(.title3.weight(.semibold))
                         .foregroundStyle(Color.legacyGold)
+                    Text(plan.billingPeriod)
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Color.legacyParchment.opacity(0.84))
                 }
                 Spacer()
                 if subscriptionService.activePlan == plan {
@@ -72,6 +77,10 @@ struct PaywallView: View {
             }
 
             if plan != .free {
+                Text("\(plan.displayName): \(plan.priceDisclosure). Payment is charged to your Apple ID. The subscription renews automatically until canceled in your App Store account settings.")
+                    .font(.caption)
+                    .foregroundStyle(Color.legacyParchment.opacity(0.82))
+
                 Button {
                     Task { await purchase(plan) }
                 } label: {
@@ -79,6 +88,32 @@ struct PaywallView: View {
                 }
                 .buttonStyle(LegacyPrimaryButtonStyle())
             }
+        }
+        .legacyCard()
+    }
+
+    private var subscriptionDisclosures: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionHeader(
+                title: "Subscription terms",
+                subtitle: "Review before starting an auto-renewing plan.",
+                systemImage: "doc.text"
+            )
+
+            Text("Premium Monthly is \(SubscriptionPlan.premiumMonthly.priceDisclosure), Premium Yearly is \(SubscriptionPlan.premiumYearly.priceDisclosure), and Heritage Pro Monthly is \(SubscriptionPlan.heritageProMonthly.priceDisclosure). Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. You can manage or cancel subscriptions in your App Store account settings.")
+                .font(.caption)
+                .foregroundStyle(Color.legacyParchment.opacity(0.86))
+
+            VStack(alignment: .leading, spacing: 10) {
+                Link(destination: LegacyLegalLinks.privacyPolicy) {
+                    Label("Privacy Policy", systemImage: "hand.raised")
+                }
+                Link(destination: LegacyLegalLinks.termsOfUse) {
+                    Label("Terms of Use (EULA)", systemImage: "doc.plaintext")
+                }
+            }
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(Color.legacyGold)
         }
         .legacyCard()
     }

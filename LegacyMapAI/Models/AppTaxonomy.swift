@@ -85,6 +85,23 @@ enum SubscriptionPlan: String, CaseIterable, Identifiable {
         }
     }
 
+    var billingPeriod: String {
+        switch self {
+        case .free: "No recurring subscription"
+        case .premiumMonthly, .heritageProMonthly: "Monthly auto-renewing subscription"
+        case .premiumYearly: "Yearly auto-renewing subscription"
+        }
+    }
+
+    var priceDisclosure: String {
+        switch self {
+        case .free: "No charge"
+        case .premiumMonthly: "£9.99 per month"
+        case .premiumYearly: "£79.99 per year"
+        case .heritageProMonthly: "£24.99 per month"
+        }
+    }
+
     var summary: String {
         switch self {
         case .free:
@@ -120,6 +137,11 @@ enum LegacyDisclaimer {
         "LegacyMap AI is not legal identity verification.",
         "LegacyMap AI is not official archival certification."
     ]
+}
+
+enum LegacyLegalLinks {
+    static let privacyPolicy = URL(string: "https://github.com/lanray07/LegacyMap-AI/blob/main/PRIVACY.md")!
+    static let termsOfUse = URL(string: "https://github.com/lanray07/LegacyMap-AI/blob/main/TERMS.md")!
 }
 
 enum DigitizerField {

@@ -63,9 +63,22 @@ struct SettingsView: View {
                 .legacyCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionHeader(title: "Legal and privacy placeholders", subtitle: "Connect these rows to hosted legal documents before release.", systemImage: "lock.doc")
-                    InsightCard(title: "Privacy policy", detail: "Document how location, photos, local records, AI requests, and exports are handled.", systemImage: "hand.raised")
-                    InsightCard(title: "Terms of use", detail: "Include limitations around OCR accuracy, genealogy verification, restoration safety, and archival certification.", systemImage: "doc.text")
+                    SectionHeader(title: "Legal and privacy", subtitle: "Review subscription, privacy, and historical-use terms.", systemImage: "lock.doc")
+                    Link(destination: LegacyLegalLinks.privacyPolicy) {
+                        Label("Privacy Policy", systemImage: "hand.raised")
+                    }
+                    .buttonStyle(LegacyPrimaryButtonStyle())
+
+                    Link(destination: LegacyLegalLinks.termsOfUse) {
+                        Label("Terms of Use (EULA)", systemImage: "doc.text")
+                    }
+                    .buttonStyle(LegacyPrimaryButtonStyle())
+
+                    InsightCard(
+                        title: "AI processing",
+                        detail: "This release uses mock AI by default. No third-party AI service is active unless a future backend is configured and disclosed.",
+                        systemImage: "sparkles"
+                    )
                 }
 
                 VStack(alignment: .leading, spacing: 12) {

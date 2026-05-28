@@ -48,7 +48,7 @@ struct OnboardingView: View {
                 .legacyCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionHeader(title: "Permissions", subtitle: "You can change these in Settings later.", systemImage: "hand.raised")
+                    SectionHeader(title: "Optional setup", subtitle: "Enable only when you want to use maps, photos, or voice input.", systemImage: "hand.raised")
                     Button {
                         locationService.requestAuthorization()
                     } label: {
@@ -103,7 +103,7 @@ struct OnboardingView: View {
         case .denied, .restricted:
             "Location disabled"
         case .notDetermined:
-            "Allow cemetery location"
+            "Continue with cemetery location"
         @unknown default:
             "Review location access"
         }
@@ -116,7 +116,7 @@ struct OnboardingView: View {
         case .denied, .restricted:
             "Photos disabled"
         case .notDetermined:
-            "Allow photo access"
+            "Continue with photo access"
         @unknown default:
             "Review photo access"
         }
@@ -129,7 +129,7 @@ struct OnboardingView: View {
         case .denied, .restricted:
             "Voice input disabled"
         case .notDetermined:
-            "Allow voice input"
+            "Continue with voice input"
         @unknown default:
             "Review voice input"
         }
