@@ -43,7 +43,9 @@ jobs:
   upload-testflight:
     name: Archive and Upload to TestFlight
     runs-on: macos-26
-    if: github.event_name == 'workflow_dispatch' && inputs.upload_testflight == true
+    if: >-
+      (github.event_name == 'workflow_dispatch' && inputs.upload_testflight == true) ||
+      (github.event_name == 'push' && contains(github.event.head_commit.message, '[upload-testflight]'))
     env:
       ARCHIVE_PATH: /tmp/LegacyMapAI.xcarchive
       EXPORT_PATH: /tmp/LegacyMapAIExport
